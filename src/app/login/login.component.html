@@ -1,1 +1,27 @@
-<p>login works!</p>
+<app-header></app-header>
+
+<main role="main" class="container">
+  <main class="form-signin col-md-4">
+    <form [formGroup]="loginform"  (ngSubmit)="validatelogininfo">
+      <img class="mb-4" src="logo.img" alt="" width="72" height="57" />
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <label>User Name</label>
+      <input type="text"
+             formControlName="username"
+             class="form-control"
+             placeholder="User Name"
+             autofocus="true" />
+      <label>Password</label>
+      <input type="password"
+             formControlName="password"
+             class="form-control"
+             placeholder="Password" />
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">
+        Sign in
+      </button>
+    </form>
+  </main>
+</main>
+
+<app-footer></app-footer>

@@ -4,8 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SiteFrameworkModule } from './site-framework/site-framework.module';
 import { LoginModule } from './login/login.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,8 +15,9 @@ import { LoginModule } from './login/login.module';
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SiteFrameworkModule,
-    LoginModule
+    LoginModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
